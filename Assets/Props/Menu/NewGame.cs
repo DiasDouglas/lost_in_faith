@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class NewGame : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class NewGame : MonoBehaviour
             if (Physics.Raycast(ray, out Hit) && Hit.collider.gameObject == gameObject)
             {
                 Debug.Log("New Game Clicked");
+                SceneManager.LoadScene(sceneName: "Stage1");
                 OnClick.Invoke();
             }
         }
