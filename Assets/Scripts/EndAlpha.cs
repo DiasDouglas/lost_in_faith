@@ -14,7 +14,7 @@ public class EndAlpha : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x >= 100f)
+        if(gameObject.transform.position.x >= 120f)
         {
             SceneManager.LoadScene(sceneName: "MainMenu");
         }
