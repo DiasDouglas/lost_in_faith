@@ -4788,6 +4788,10 @@ PrefabInstance:
       propertyPath: explosionPrefab
       value: 
       objectReference: {fileID: 3114092916887555399, guid: b4bbc113ecce90746bdab94bbc8cad64, type: 3}
+    - target: {fileID: 64813855582584038, guid: 64a869c4893dd324f8926fc1670105a9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 535078050418850155, guid: 64a869c4893dd324f8926fc1670105a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.87
