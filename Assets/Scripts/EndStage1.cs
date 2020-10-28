@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EndAlpha : MonoBehaviour
+public class EndStage1 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,9 +14,9 @@ public class EndAlpha : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gameObject.transform.position.x >= 120f)
+        if(gameObject.transform.position.x >= 260f)
         {
-            SceneManager.LoadScene(sceneName: "MainMenu");
+            SceneManager.LoadScene(sceneName: "Stage3");
         }
     }
 }

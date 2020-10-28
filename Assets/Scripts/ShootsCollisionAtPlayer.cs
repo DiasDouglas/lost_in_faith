@@ -5,30 +5,35 @@ using UnityEngine;
 public class ShootsCollisionAtPlayer : MonoBehaviour
 {
     public ParticleSystem part;
-    public ParticleCollisionEvent[] collisionEvents;
+    public ParticleCollisionEvent[] collisionEventsAtPlayer;
     public GameObject explosionPrefab;
     public GameObject player;
 
     void Start()
     {
         part = GetComponent<ParticleSystem>();
-        collisionEvents = new ParticleCollisionEvent[60];
+        collisionEventsAtPlayer = new ParticleCollisionEvent[60];
     }
 
     void OnParticleCollision(GameObject other)
     {
-        if(other == player)
+        if(other.gameObject.name == "StarShip")
         {
             Debug.Log("Collide at Player");
 
-            GameObject exp = Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
+            LifesHandler.Life -= 1;
 
-            foreach (Transform child in other.transform)
+            if (LifesHandler.Life == 0)
             {
-                Destroy(child.gameObject);
-            }
+                GameObject exp = Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
 
-            Destroy(other);
+                foreach (Transform child in other.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+
+                Destroy(other);
+            }
         }
     }
 }

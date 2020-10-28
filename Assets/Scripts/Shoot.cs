@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public ParticleSystem ps;
+    public AudioSource disparos;
 
     // Use this for initialization
     void Start()
@@ -28,10 +29,19 @@ public class Shoot : MonoBehaviour
     {
         ParticleSystem.EmissionModule em = ps.emission;
         em.enabled = true;
+
+        disparos.enabled = true;
+        if (!(disparos.isPlaying))
+        {
+            disparos.Play();
+        }
     }
     void StopShooting()
     {
         ParticleSystem.EmissionModule e1 = ps.emission;
         e1.enabled = false;
+
+        disparos.Stop();
+        disparos.enabled = false;
     }
 }
