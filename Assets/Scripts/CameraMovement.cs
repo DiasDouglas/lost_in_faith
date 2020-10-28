@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    public bool changeCamera;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,14 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(new Vector3(2f * Time.deltaTime, 0, 0));
+        if(changeCamera)
+        {
+            transform.Translate(new Vector3(5f * Time.deltaTime, 0, 5f * Time.deltaTime));
+        }
+        else 
+        {
+            transform.Translate(new Vector3(2f * Time.deltaTime, 0, 0));
+        }
+        
     }
 }
