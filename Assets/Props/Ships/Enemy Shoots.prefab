@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 171473655948799230}
   - component: {fileID: 3510283622577047923}
   - component: {fileID: 896024917734968922}
+  - component: {fileID: 1018385682311267748}
   m_Layer: 0
   m_Name: Enemy Shoots
   m_TagString: Untagged
@@ -4828,3 +4829,15 @@ MonoBehaviour:
   part: {fileID: 171473655948799230}
   explosionPrefab: {fileID: 3114092916887555399, guid: b4bbc113ecce90746bdab94bbc8cad64, type: 3}
   player: {fileID: 875714877013009361, guid: 64a869c4893dd324f8926fc1670105a9, type: 3}
+--- !u!114 &1018385682311267748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613090879339057373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330cab39642d367449eedacfce0ef437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -22,6 +22,7 @@ public class ShootsCollisionAtPlayer : MonoBehaviour
             Debug.Log("Collide at Player");
 
             LifesHandler.Life -= 1;
+            LifeText.lifeCount -= 1;
 
             if (LifesHandler.Life == 0)
             {
