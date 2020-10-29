@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
     {
         if(changeCamera)
         {
-            transform.Translate(new Vector3(5f * Time.deltaTime, 0, 5f * Time.deltaTime));
+            transform.Translate(new Vector3(3f * Time.deltaTime, 0, 3f * Time.deltaTime));
         }
         else 
         {
