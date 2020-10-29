@@ -6237,6 +6237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps: {fileID: 829343798}
+  disparos: {fileID: 0}
 --- !u!114 &702915036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13404,3 +13405,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8cf858deabe9dd14e9df1833376777c2, type: 3}
+--- !u!1 &8978884434866298165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7070689658380501857, guid: 8cf858deabe9dd14e9df1833376777c2, type: 3}
+  m_PrefabInstance: {fileID: 8978884434866298164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &8978884434866298166
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978884434866298165}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

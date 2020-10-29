@@ -5696,6 +5696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ps: {fileID: 829343798}
+  disparos: {fileID: 0}
 --- !u!114 &702915036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11992,6 +11993,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f837a0c62deed42b9f0af0a16912a2, type: 3}
+--- !u!1 &1786729111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1363945362096645950, guid: 73f837a0c62deed42b9f0af0a16912a2, type: 3}
+  m_PrefabInstance: {fileID: 1183375277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1786729112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786729111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37ad23009e7cae141b4fc921c323390e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 3114092916887555399, guid: b4bbc113ecce90746bdab94bbc8cad64, type: 3}
 --- !u!1001 &1793380934
 PrefabInstance:
   m_ObjectHideFlags: 0
