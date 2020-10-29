@@ -3285,8 +3285,13 @@ GameObject:
   m_Component:
   - component: {fileID: 7070689658380476225}
   - component: {fileID: 7070689658373222561}
+<<<<<<< HEAD
   - component: {fileID: 8069511460644163233}
   - component: {fileID: 3186737358326763564}
+=======
+  - component: {fileID: 3194932113763059194}
+  - component: {fileID: 6248097873818560803}
+>>>>>>> 0bd45a31c11fa14b7b565a56786486476ee8bc50
   m_Layer: 0
   m_Name: Minion
   m_TagString: Untagged
@@ -3352,7 +3357,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!54 &8069511460644163233
+--- !u!54 &3194932113763059194
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3368,7 +3373,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!136 &3186737358326763564
+--- !u!136 &6248097873818560803
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3378,10 +3383,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.43425444
-  m_Height: 1.0768179
+  m_Radius: 0.5
+  m_Height: 1
   m_Direction: 1
-  m_Center: {x: 6.079431e-17, y: 0.523781, z: 0.06574556}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7070689658380501859
 GameObject:
   m_ObjectHideFlags: 0
