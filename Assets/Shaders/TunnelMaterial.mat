@@ -31,10 +31,10 @@ Material:
     MotionVector: User
   disabledShaderPasses:
   - DistortionVectors
-  - MOTIONVECTORS
+  - TransparentBackface
   - TransparentDepthPrepass
   - TransparentDepthPostpass
-  - TransparentBackface
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -127,8 +127,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3D3F6275: 1
-    - Vector1_B454B0C4: 0.9
+    - Vector1_3D3F6275: 0.08
+    - Vector1_B454B0C4: -0.57
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
