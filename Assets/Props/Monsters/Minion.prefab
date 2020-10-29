@@ -3285,13 +3285,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7070689658380476225}
   - component: {fileID: 7070689658373222561}
-<<<<<<< HEAD
   - component: {fileID: 8069511460644163233}
   - component: {fileID: 3186737358326763564}
-=======
-  - component: {fileID: 3194932113763059194}
-  - component: {fileID: 6248097873818560803}
->>>>>>> 0bd45a31c11fa14b7b565a56786486476ee8bc50
   m_Layer: 0
   m_Name: Minion
   m_TagString: Untagged
