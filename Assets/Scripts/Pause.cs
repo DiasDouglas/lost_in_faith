@@ -9,22 +9,24 @@ public class Pause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("p"))
+        if (Input.GetKeyDown("p"))
         {
             paused = !paused;
 
             if(paused == true)
             {
+                gameObject.GetComponent<Renderer>().enabled = !gameObject.GetComponent<Renderer>().enabled;
                 Time.timeScale = 0;
             }
             else
             {
+                gameObject.GetComponent<Renderer>().enabled = !gameObject.GetComponent<Renderer>().enabled;
                 Time.timeScale = 1;
             }
         }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ShootsCollisionAtPlayer : MonoBehaviour
 {
@@ -24,8 +25,10 @@ public class ShootsCollisionAtPlayer : MonoBehaviour
             LifesHandler.Life -= 1;
             LifeText.lifeCount -= 1;
 
-            if (LifesHandler.Life == 0)
+            if (LifesHandler.Life <= 0)
             {
+                Invoke("GameOver", 4.0f);
+
                 GameObject exp = Instantiate(explosionPrefab, other.transform.position, other.transform.rotation);
 
                 foreach (Transform child in other.transform)
@@ -34,7 +37,13 @@ public class ShootsCollisionAtPlayer : MonoBehaviour
                 }
 
                 Destroy(other);
+
             }
         }
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene(sceneName: "MainMenu");
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class HowToPlay : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class HowToPlay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -23,8 +24,7 @@ public class HowToPlay : MonoBehaviour
         {
             if (Physics.Raycast(ray, out Hit) && Hit.collider.gameObject == gameObject)
             {
-                Debug.Log("How To Play Clicked");
-                OnClick.Invoke();
+                SceneManager.LoadScene(sceneName: "HowToPlay");
             }
         }
     }

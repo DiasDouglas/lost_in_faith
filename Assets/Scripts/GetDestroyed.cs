@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GetDestroyed : MonoBehaviour
 {
@@ -15,8 +16,10 @@ public class GetDestroyed : MonoBehaviour
             LifesHandler.Life -= 1;
             LifeText.lifeCount -= 1;
 
-            if (LifesHandler.Life == 0)
+            if (LifesHandler.Life <= 0)
             {
+                Invoke("GameOver", 4.0f);
+
                 GameObject exp = Instantiate(explosionPrefab, col.transform.position, col.transform.rotation);
 
                 foreach (Transform child in col.gameObject.transform)
@@ -25,6 +28,7 @@ public class GetDestroyed : MonoBehaviour
                 }
 
                 Destroy(col.gameObject);
+
             }
 
             GameObject exp2 = Instantiate(explosionPrefab, gameObject.transform.position, gameObject.transform.rotation);
@@ -37,5 +41,10 @@ public class GetDestroyed : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+
+    void GameOver()
+    {
+        SceneManager.LoadScene(sceneName: "MainMenu");
     }
 }
