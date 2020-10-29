@@ -5084,6 +5084,26 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727709, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727709, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1297650283}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56aaa460beb263848881f136c4008d91, type: 3}
 --- !u!1001 &9043905960645079032

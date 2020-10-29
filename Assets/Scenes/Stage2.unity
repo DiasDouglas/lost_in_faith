@@ -12843,6 +12843,30 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727708, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727709, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488148212349727709, guid: 56aaa460beb263848881f136c4008d91, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1297650283}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56aaa460beb263848881f136c4008d91, type: 3}
 --- !u!4 &1040968296 stripped
@@ -17774,6 +17798,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1297650284}
     m_Modifications:
+    - target: {fileID: 1208120548378678478, guid: c0b639c089ce1604a924b9967bf27db7, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 2534964839176971238, guid: 5587bb87211420c4d909a115f6ce6e7e, type: 3}
     - target: {fileID: 2369308833796549318, guid: c0b639c089ce1604a924b9967bf27db7, type: 3}
       propertyPath: m_Enabled
       value: 0
